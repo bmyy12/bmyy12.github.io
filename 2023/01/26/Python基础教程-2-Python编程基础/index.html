@@ -4,12 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python基础教程(1)--开发环境的搭建, 北冥有鱼的博客">
-    <meta name="description" content="Hello，大家好。今天呢，在这，我们聊一聊Python开发环境的搭建
-1.准备/材料材料：电脑一台、网线一根。。Windows版本下载链接
+    <meta name="keywords" content="Python基础教程(2)--Python编程基础, 北冥有鱼的博客">
+    <meta name="description" content="1Python的语法特点1.1注释规则
+单行注释:在python中,使用#作为单行注释,在#之后的部分直到这一行结束的部分都会被解释器忽略
 
-
-注意：Python3.9及以上版本不再支持Windows7，所以，用Windows7的小伙伴们">
+举个栗子:
+12#这是一个注释print(&amp;quot;你好&amp;quot;)  #这也是一个注释
+单行">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python基础教程(1)--开发环境的搭建 | 北冥有鱼的博客</title>
+    <title>Python基础教程(2)--Python编程基础 | 北冥有鱼的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -273,12 +274,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python基础教程(1)--开发环境的搭建</h1>
+                    <h1 class="description center-align post-title">Python基础教程(2)--Python编程基础</h1>
                 </div>
             </div>
         </div>
@@ -302,8 +303,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
-                                <span class="chip bg-color">python基础教程</span>
+                            <a href="/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                                <span class="chip bg-color">Python基础教程</span>
                             </a>
                         
                     </div>
@@ -348,69 +349,208 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Hello，大家好。今天呢，在这，我们聊一聊Python开发环境的搭建</p>
-<h2 id="1-准备-材料"><a href="#1-准备-材料" class="headerlink" title="1.准备/材料"></a>1.准备/材料</h2><h3 id="材料：电脑一台、网线一根。。"><a href="#材料：电脑一台、网线一根。。" class="headerlink" title="材料：电脑一台、网线一根。。"></a>材料：电脑一台、网线一根。。</h3><p><a target="_blank" rel="noopener" href="https://www.python.org/">Windows版本下载链接</a></p>
-<p><img src="/image/download2.png" alt="img"></p>
-<p><img src="/image/download1.png" alt="img"></p>
-<p><strong>注意：Python3.9及以上版本不再支持Windows7，所以，用Windows7的小伙伴们，只能用3.8及以下版本了…</strong></p>
-<p>用Windows8/10/11的小伙伴推荐安装3.10或3.11版本</p>
-<h2 id="2-1-1开始安装（方法一）"><a href="#2-1-1开始安装（方法一）" class="headerlink" title="2.1.1开始安装（方法一）"></a>2.1.1开始安装（方法一）</h2><p>2.1 勾选按钮，更换存储路径，尽可能的不要用默认安装，点击第一个“install now”将会使用默认安装，路径不可修改，不推荐（这是64位，其他操作大同小异）</p>
-<p><img src="/image/py1.png" alt="img"></p>
-<p>（1）接着跳转到下面这个页面，直接点击下一步，默认全部勾选</p>
-<p><img src="/image/py2.png" alt="img"></p>
-<p>（2）到了“Advanced Options”勾选第一个，然后点击“Browse”更换路径。点击安装install即可。</p>
-<p><img src="/image/py3.png" alt="img"></p>
-<p>（3）安装速度很快，也就几分钟，安装完会显示“Setup was successful”,点击“close”关闭即可。</p>
-<h2 id="2-2验证安装"><a href="#2-2验证安装" class="headerlink" title="2.2验证安装"></a>2.2验证安装</h2><p>按win+R,在弹出的窗口里输入cmd，按回车键或点确定按钮</p>
-<p><img src="/image/cmd1.png" alt="img"></p>
-<p>然后，会弹出一个黑洞洞的窗口…</p>
-<p><img src="/image/cmd2.png" alt="img" title="cmd窗口（这个是作者我给cmd加了个背景图片）"></p>
-<p>接着，在窗口中打入<code>python</code>，然后回车…</p>
-<p><img src="/image/cmd3.png" alt="img"></p>
-<p>如果能正常打印和图片上的类似的信息的话，说明安装成功</p>
-<h2 id="2-1-2Windows系统安装python（方法二）"><a href="#2-1-2Windows系统安装python（方法二）" class="headerlink" title="2.1.2Windows系统安装python（方法二）"></a>2.1.2Windows系统安装python（方法二）</h2><p>这个方法挺简单的，直接用Microsoft Store安装</p>
-<p>在Microsoft Store搜索框里搜索python…</p>
-<p><img src="/image/mp1.png" alt="img"></p>
-<p>选择版本，安装即可</p>
-<h4 id="缺点：不能更改安装路径"><a href="#缺点：不能更改安装路径" class="headerlink" title="缺点：不能更改安装路径"></a>缺点：不能更改安装路径</h4><h2 id="Linux系统安装python"><a href="#Linux系统安装python" class="headerlink" title="Linux系统安装python"></a>Linux系统安装python</h2><p>如果你是用的操作系统是Ubuntu之类的linux系统的话，那么前面的安装方法并不适合你</p>
-<p>鼠标右键，选择“打开终端”，依次输入以下命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install python3</span><br><span class="line">sudo apt install pip3</span><br></pre></td></tr></table></figure>
+                <h2 id="1Python的语法特点"><a href="#1Python的语法特点" class="headerlink" title="1Python的语法特点"></a>1Python的语法特点</h2><h3 id="1-1注释规则"><a href="#1-1注释规则" class="headerlink" title="1.1注释规则"></a>1.1注释规则</h3><ul>
+<li>单行注释:<br>在python中,使用#作为单行注释,在#之后的部分直到这一行结束的部分都会被解释器忽略</li>
+</ul>
+<p>举个栗子:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#这是一个注释</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)  <span class="comment">#这也是一个注释</span></span><br></pre></td></tr></table></figure>
+<p><strong>单行注释可以出现在代码的任何位置,但不能分割关键字和标识符等</strong><br>例如,下面的代码是错误的</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="comment">#输出你好&quot;你好&quot;)</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>多行注释:<br>Python中并没有提供单独的多行注释标记,而是包含在一对三引号中</li>
+</ul>
+<p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">注释内容</span></span><br><span class="line"><span class="string">这个程序是北冥有鱼写的</span></span><br><span class="line"><span class="string">可以输出 你好</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>也可以这样:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">注释内容</span></span><br><span class="line"><span class="string">这个程序是北冥有鱼写的</span></span><br><span class="line"><span class="string">可以输出 你好</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><em>注意:如果三引号(‘’’…’’’)和(“””…”””)出现在语句中,那么就不是注释,而是字符串</em><br>例如:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&quot;&quot;你好,世界&quot;&quot;&quot;</span>)  <span class="comment">#这里的三引号为字符串</span></span><br><span class="line">a=<span class="string">&#x27;&#x27;&#x27;无奈&#x27;&#x27;&#x27;</span>   <span class="comment">#这里的三引号也是字符串</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;你好&#x27;</span>) <span class="string">&#x27;&#x27;&#x27;输出你好&#x27;&#x27;&#x27;</span> <span class="comment">#这里的三引号是注释</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>编码声明注释<br>语法格式:<code>#coding=指定的编码</code></li>
+</ul>
+<p>例如:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding=gbk</span></span><br></pre></td></tr></table></figure>
+<p>为了美观,也可以这样写:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*-coding:gbk-*-</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-2代码缩进"><a href="#1-2代码缩进" class="headerlink" title="1.2代码缩进"></a>1.2代码缩进</h3><p>学过C或Java的朋友应该都知道,C和Java都采用大括号”{}”分隔代码块,但python却是用代码缩进和冒号”:”分隔代码的各个层次</p>
+<p>举个栗子,以下代码的缩进均为正确的缩进:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">choice=<span class="built_in">input</span>(<span class="string">&quot;输入你的选择:[1放弃/2重试/3跳过]&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> choice==<span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你选择了放弃&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> choice==<span class="number">2</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你选择了重试&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> choice==<span class="number">3</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你选择了跳过&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你的选择无效&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>python对代码缩进要求很严格,同一级别的代码块缩进量必须相同,否则将会报错</strong></p>
+<p>举一个错误的栗子:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)  <span class="comment">#这里缩进量为4个空格</span></span><br><span class="line">   choice=<span class="built_in">input</span>(<span class="string">&quot;输入1再输出一遍你好,其他输入将退出程序&quot;</span>)  <span class="comment">#这里就不对,缩进量为3个空格</span></span><br><span class="line">  <span class="keyword">if</span> choice==<span class="number">1</span>:   <span class="comment">#这里也不对,缩进量为2个空格</span></span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-3-1编码规范"><a href="#1-3-1编码规范" class="headerlink" title="1.3.1编码规范"></a>1.3.1编码规范</h3><p>python采用PEP 8作为编码规范,其中 PEP 是 Python Enhancement Proposal（Python 增强建议书）的缩写，8 代表的是 Python 代码的样式指南。下面仅给大家列出 PEP 8 中初学者应严格遵守的一些编码规则：</p>
+<ul>
+<li><p>每个 import 语句只导入一个模块，尽量避免一次导入多个模块</p>
+</li>
+<li><p>不要在行尾添加分号，也不要用分号将两条命令放在同一行</p>
+</li>
+<li><p>建议每行不超过 80 个字符，如果超过，建议使用小括号将多行内容隐式的连接起来，而不推荐使用反斜杠 \ 进行连接。</p>
+</li>
+<li><p>使用必要的空行可以增加代码的可读性，通常在顶级定义（如函数或类的定义）之间空两行，而方法定义之间空一行，另外在用于分隔某些功能的位置也可以空一行。</p>
+</li>
+<li><p>通常情况下，在运算符两侧、函数参数之间以及逗号两侧，都建议使用空格进行分隔。</p>
+<h3 id="1-3-2命名规范"><a href="#1-3-2命名规范" class="headerlink" title="1.3.2命名规范"></a>1.3.2命名规范</h3><p>命名规范在编写代码时有很重要的作用,虽然不遵循规范写出的程序未必报错,但规范命名能够更好地读代码…</p>
+</li>
+<li><p>命名只能以字母或者_下划线开头</p>
+</li>
+<li><p>名字不能包含空格</p>
+</li>
+<li><p>名字不能与关键字重合</p>
+</li>
+<li><p>不宜将字符l(小写字母l)，’O’’o’(大小写字母o)、’I’(大写字母I)用作变量名称，防止和数字0、1混淆</p>
+</li>
+<li><p>类的命名建议用首字母大写单词串(驼峰式命名)</p>
+<h2 id="2-Python中的变量"><a href="#2-Python中的变量" class="headerlink" title="2.Python中的变量"></a>2.Python中的变量</h2><h3 id="2-1-1保留字"><a href="#2-1-1保留字" class="headerlink" title="2.1.1保留字"></a>2.1.1保留字</h3><p>保留字是Python中已被赋予特定意义的一些单词,开发程序时,不可以用来作为变量名，函数名使用,保留字大小写敏感</p>
+<table>
+<thead>
+<tr>
+<th>and</th>
+<th>as</th>
+<th>assert</th>
+<th>break</th>
+<th>class</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>continue</td>
+<td>def</td>
+<td>del</td>
+<td>elif</td>
+<td>else</td>
+</tr>
+<tr>
+<td>except</td>
+<td>finally</td>
+<td>for</td>
+<td>from</td>
+<td>global</td>
+</tr>
+<tr>
+<td>if</td>
+<td>import</td>
+<td>in</td>
+<td>is</td>
+<td>lambda</td>
+</tr>
+<tr>
+<td>nonlocal</td>
+<td>not</td>
+<td>or</td>
+<td>pass</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>return</td>
+<td>try</td>
+<td>while</td>
+<td>with</td>
+<td>yield</td>
+</tr>
+<tr>
+<td>False</td>
+<td>None</td>
+<td>True</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p>查看python中的保留字可以用以下代码:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> keyboard</span><br><span class="line"><span class="built_in">print</span>(keyboard.kwlist)</span><br></pre></td></tr></table></figure>
+<h3 id="2-1-2标识符"><a href="#2-1-2标识符" class="headerlink" title="2.1.2标识符"></a>2.1.2标识符</h3><p>在 Python 里，标识符由字母、数字、下划线组成。</p>
+<p>在 Python 中，所有标识符可以包括英文、数字以及下划线”_”，但不能以数字开头。</p>
+<p>Python 中的标识符是区分大小写的。</p>
+<p>以下划线开头的标识符是有特殊意义的。</p>
+<p>以双下划线开头的__foo代表类的私有成员，__foo(self)代表类的私有方法，不能直接从外部调用，需通过类里的其他方法调用。</p>
+<p>以双下划线开头和结尾的__foo__代表 Python 里特殊方法专用的标识，如 __init__()代表类的构造函数。</p>
+<h3 id="2-2-1变量的理解"><a href="#2-2-1变量的理解" class="headerlink" title="2.2.1变量的理解"></a>2.2.1变量的理解</h3><p>任何编程语言都需要处理数据，比如数字、字符串、字符等，我们可以直接使用数据，也可以将数据保存到变量中，方便以后使用。</p>
+<p>变量（Variable）可以看成一个小箱子，专门用来“盛装”程序中的数据。每个变量都拥有独一无二的名字，通过变量的名字就能找到变量中的数据。</p>
+<p>从底层看，程序中的数据最终都要放到内存（内存条）中，变量其实就是这块内存的名字。</p>
+<p>和变量相对应的是常量（Constant），它们都是用来“盛装”数据的小箱子，不同的是：变量保存的数据可以被多次修改，而常量一旦保存某个数据之后就不能修改了。</p>
+<h3 id="2-2-2变量的定义"><a href="#2-2-2变量的定义" class="headerlink" title="2.2.2变量的定义"></a>2.2.2变量的定义</h3><p>python中不需要像其他编程语言一样先声明变量名以及其类型,直接赋值即可创建各种类型的变量</p>
+<p>为变量赋值可以通过”=”实现,语法格式如下:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量名 = 值</span><br></pre></td></tr></table></figure>
+<p>例如,创建一个整形变量a,赋值为100,则可以用以下代码:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=100</span><br></pre></td></tr></table></figure>
+<p>也可以通过为变量赋一个字符串值,创建一个字符串变量</p>
+<p>例如:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">name=&quot;张三&quot;</span><br></pre></td></tr></table></figure>
 
-<p>这里对于linux新手有个坑点就是如果你是非root用户，安装时apt会向你要密码，而这个密码默认输入是不回显的</p>
-<p>然后，静等安装完成</p>
-<p><em>注意：一定不要在安装时强行关闭终端，否则很容易让你的系统出现一些奇奇怪怪的很棘手的错误…</em></p>
-<h4 id="测试python是否安装成功"><a href="#测试python是否安装成功" class="headerlink" title="测试python是否安装成功"></a>测试python是否安装成功</h4><p>linux系统上测试python是否安装成功方法和在Windows平台差不多</p>
-<p>只不过是将cmd换成了shell（终端）</p>
-<h2 id="python开发工具"><a href="#python开发工具" class="headerlink" title="python开发工具"></a>python开发工具</h2><p>嗯，使用python解释器安装时自带的IDLE写程序有点鸡肋（笑）</p>
-<p>当然，你要是喜欢IDLE的话，我也不反对。你乐意就行。</p>
-<h3 id="一些常用的第三方Python开发工具"><a href="#一些常用的第三方Python开发工具" class="headerlink" title="一些常用的第三方Python开发工具"></a>一些常用的第三方Python开发工具</h3><h4 id="1-Visual-Studio-Code"><a href="#1-Visual-Studio-Code" class="headerlink" title="1.Visual Studio Code"></a>1.Visual Studio Code</h4><p>简单介绍一下：Visual Studio Code（简称“VS Code”）是Microsoft在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器，可在桌面上运行，并且可用于Windows，macOS和Linux。它具有对JavaScript，TypeScript和Node.js的内置支持，并具有丰富的其他语言（例如C++，C＃，Java，Python，PHP，Go）和运行时（例如.NET和Unity）扩展的生态系统。（资料来自百度）</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">点我下载Visual Studio Code</a></p>
-<p><img src="/image/vs1.png" alt="img"><br>选择对应版本下载即可<br><strong>这里提醒一下使用Ubuntu的小伙伴，Ubuntu系统自带的软件商店虽然也可以下载VS Code,但那个VS Code有问题，不能输入中文，只有在微软官网里下载的软件包才能正常输入中文</strong></p>
-<h4 id="2-PyCharm"><a href="#2-PyCharm" class="headerlink" title="2.PyCharm"></a>2.PyCharm</h4><p>PyCharm是一种Python IDE（Integrated Development Environment，集成开发环境），带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、项目管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持Django框架下的专业Web开发。（来自百度）</p>
-<p><a target="_blank" rel="noopener" href="https://www.jetbrains.com/pycharm/download/#section=windows">点我下载PyCharm</a></p>
-<p><img src="/image/pc1.png" alt="PyCharm"></p>
-<p>个人感觉这个软件有点复杂，喜欢研究的朋友可以搞一下</p>
-<h4 id="3-Vim"><a href="#3-Vim" class="headerlink" title="3.Vim"></a>3.Vim</h4><p>Vim是从 vi 发展出来的一个文本编辑器。代码补全、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用，和Emacs并列成为类Unix系统用户最喜欢的文本编辑器。</p>
-<p>vim的设计理念是命令的组合。用户学习了各种各样的文本间移动/跳转的命令和其他的普通模式的编辑命令，并且能够灵活组合使用的话，能够比那些没有模式的编辑器更加高效的进行文本编辑。同时VIM与很多快捷键设置和正则表达式类似,可以辅助记忆。并且vim针对程序员做了优化。</p>
-<p>用Linux系统的小伙伴的电脑系统在安装时可能会自带vim<br>如果没有安装的话，可以在终端里敲以下命令安装vim</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install vim</span><br></pre></td></tr></table></figure>
-
-<p>用Windows的小伙伴要玩vim的话可能相对麻烦一点，这个网页访问真的很慢。。。</p>
-<p><a target="_blank" rel="noopener" href="https://www.vim.org/download.php">点我下载Gvim</a>Gvim是vim的GUI版本，好像只有Windows有这个版本</p>
-<p><img src="/image/vi1.png" alt="GVim下载界面"><br><strong>缺点：Vim对于初学者来说不是那么容易上手，基本所有的操作都得用键盘，没经验的小伙伴最好先别用</strong></p>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>刚才讲那么多，弄了半天，我们连Hello World都没写呢！</p>
-<p>让我们开始写吧！（笔者这里使用VS Code演示）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello World&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p>简单不简单？</p>
-<p>把它保存起来，然后运行<br><img src="/image/code.png" alt="编写代码"></p>
-<p><img src="/image/save.png" alt="保存代码"></p>
-<p><img src="/image/run.png" alt="运行代码"></p>
-<p>还有一种运行代码的方式就是启动cmd或PowerShell（Linux系统启动终端），然后按以下格式输入并回车</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python 文件路径/文件名.py</span><br></pre></td></tr></table></figure>
-<p>比如我的源码存放路径是C:\Users\34756\Desktop\proj\Hello.py<br>那么输入的命令应该就是<code>python C:\Users\34756\Desktop\proj\Hello.py</code></p>
-<p><img src="/image/run1.png" alt="run"></p>
-<p><strong>以上是本文的全部内容，如有帮助，欢迎您的转发与收藏！！！</strong></p>
-
+<p>另外,Python是一种动态类型的语言,也就是说,变量类型可以随时转换<br>例如:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">100</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的值为&quot;</span>+<span class="built_in">str</span>(a))  <span class="comment">#输出a的值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))  <span class="comment">#输出a的类型</span></span><br><span class="line">a=<span class="string">&#x27;张三&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的值为&quot;</span>+<span class="built_in">str</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br></pre></td></tr></table></figure>
+<h2 id="3-Python中的基本数据类型"><a href="#3-Python中的基本数据类型" class="headerlink" title="3.Python中的基本数据类型"></a>3.Python中的基本数据类型</h2><h3 id="3-1整形"><a href="#3-1整形" class="headerlink" title="3.1整形"></a>3.1整形</h3><p>整形可以表示整数数值,即没有小数的数值</p>
+<p>Python中,整数包括正整数,负整数和0,它的位数是任意的(只要不超出内存)</p>
+<p>整数类型包括十进制整数,八进制整数,十六进制整数和二进制整数</p>
+<h4 id="3-1-1十进制整数"><a href="#3-1-1十进制整数" class="headerlink" title="3.1.1十进制整数"></a>3.1.1十进制整数</h4><p>这个大家都很容易理解,”满十进一”,我们平常做数学题计算都是十进制</p>
+<h4 id="3-1-2八进制整数"><a href="#3-1-2八进制整数" class="headerlink" title="3.1.2八进制整数"></a>3.1.2八进制整数</h4><p>由0-7八个数字组成,”满八进一”,并且以0o或0O开头</p>
+<p>如0o10转换为十进制就是8,0o144转换为十进制就是100<br>-0o12转换为十进制就是-10</p>
+<h4 id="3-1-3十六进制整数"><a href="#3-1-3十六进制整数" class="headerlink" title="3.1.3十六进制整数"></a>3.1.3十六进制整数</h4><p>由0-9,A-F组成,”满十六进一”,并且以0x或0X开头</p>
+<p>如0x64转换为十进制就是100,0x25转换成十进制数就是37</p>
+<h4 id="3-1-4二进制整数"><a href="#3-1-4二进制整数" class="headerlink" title="3.1.4二进制整数"></a>3.1.4二进制整数</h4><p>由0和1组成,”满二进一”</p>
+<p>如101转换为十进制就是5,1010转换为十进制就是10</p>
+<h3 id="3-2浮点型"><a href="#3-2浮点型" class="headerlink" title="3.2浮点型"></a>3.2浮点型</h3><p>浮点型由整数部分和小数部分组成,主要用于处理包括小数的数,如3.14,1.11</p>
+<h3 id="3-3字符串"><a href="#3-3字符串" class="headerlink" title="3.3字符串"></a>3.3字符串</h3><p>字符串就是连续的字符序列,通常使用单引号’’,双引号””或三引号’’’ ‘’’或””” “””组成,语义上没有差别</p>
+<h3 id="3-4布尔类型"><a href="#3-4布尔类型" class="headerlink" title="3.4布尔类型"></a>3.4布尔类型</h3><p>布尔类型主要表示真和假的值,在Python中,标识符True和False被解释为布尔值</p>
+<p>另外,Python中的布尔值可以转换为数值,其中True表示1,False表示0</p>
+<h3 id="3-5数据类型转换"><a href="#3-5数据类型转换" class="headerlink" title="3.5数据类型转换"></a>3.5数据类型转换</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int(x)</td>
+<td>将 x 转换成整数类型</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将 x 转换成浮点数类型</td>
+</tr>
+<tr>
+<td>complex(real，[,imag])</td>
+<td>创建一个复数</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将 x 转换为字符串</td>
+</tr>
+<tr>
+<td>repr(x)</td>
+<td>将 x 转换为表达式字符串</td>
+</tr>
+<tr>
+<td>eval(str)</td>
+<td>计算在字符串中的有效 Python 表达式，并返回一个对象</td>
+</tr>
+<tr>
+<td>chr(x)</td>
+<td>将整数 x 转换为一个字符</td>
+</tr>
+<tr>
+<td>ord(x)</td>
+<td>将一个字符 x 转换为它对应的整数值</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>将一个整数 x 转换为一个十六进制字符串</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>将一个整数 x 转换为一个八进制的字符串</td>
+</tr>
+</tbody></table>
+<h2 id="4-基本输入与输出"><a href="#4-基本输入与输出" class="headerlink" title="4.基本输入与输出"></a>4.基本输入与输出</h2><h3 id="4-1使用input-函数输入"><a href="#4-1使用input-函数输入" class="headerlink" title="4.1使用input()函数输入"></a>4.1使用input()函数输入</h3><p>python中的内置函数input()可以接收用户输入的内容,input()的基本用法如下:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量名=<span class="built_in">input</span>(<span class="string">&quot;提示文字&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>举个栗子:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="built_in">input</span>(<span class="string">&quot;你输入啥,我就在屏幕上打印啥:&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>在python3中,无论input接收到的是什么数据都会被当作字符串读取,如果想接收其他类型就必须进行类型转换,例如接收整形数据并保存在变量x中,可以这样写:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入数值:&quot;</span>))</span><br></pre></td></tr></table></figure>
+<h3 id="4-2使用print-函数输出"><a href="#4-2使用print-函数输出" class="headerlink" title="4.2使用print()函数输出"></a>4.2使用print()函数输出</h3><p>Python中的内置函数print()可以将结果输出到控制台中,print()的进本用法如下:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(输出内容)</span><br></pre></td></tr></table></figure>
+<p>举个栗子:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">3</span></span><br><span class="line">b=<span class="number">5</span></span><br><span class="line"><span class="built_in">print</span>(a)  <span class="comment">#打印a的值</span></span><br><span class="line"><span class="built_in">print</span>(b)  <span class="comment">#打印b的值</span></span><br><span class="line"><span class="built_in">print</span>(a,b)   <span class="comment">#打印a和b的值</span></span><br><span class="line"><span class="built_in">print</span>(a+b)   <span class="comment">#打印a+b的值</span></span><br><span class="line"><span class="built_in">print</span>(a*b)   <span class="comment">#打印a✖b的值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;愿明日之你,胸中有沟壑,立马镇山河!&quot;</span>)</span><br></pre></td></tr></table></figure>
                 
             </div>
             <hr/>
@@ -436,7 +576,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://bmyy12.github.io/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/">https://bmyy12.github.io/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</a>
+                    <a href="https://bmyy12.github.io/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-2-Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">https://bmyy12.github.io/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-2-Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -474,8 +614,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
-                                    <span class="chip bg-color">python基础教程</span>
+                                <a href="/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                                    <span class="chip bg-color">Python基础教程</span>
                                 </a>
                             
                         </div>
@@ -521,9 +661,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-2-Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
@@ -541,9 +682,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -556,6 +697,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -574,13 +716,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/01/25/Github%E6%A1%8C%E9%9D%A2%E7%89%88%E6%B1%89%E5%8C%96-%E4%BA%B2%E6%B5%8B%E6%9C%89%E6%95%88/">
+                <a href="/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Github桌面版汉化(亲测有效)">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Python基础教程(1)--开发环境的搭建">
                         
-                        <span class="card-title">Github桌面版汉化(亲测有效)</span>
+                        <span class="card-title">Python基础教程(1)--开发环境的搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -591,12 +733,16 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            北冥有鱼
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -604,8 +750,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Github/">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">python基础教程</span>
                     </a>
                     
                 </div>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, 北冥有鱼的博客">
+    <meta name="keywords" content="分类: python, 北冥有鱼的博客">
     <meta name="description" content="北冥有鱼的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类 | 北冥有鱼的博客</title>
+    <title>分类: python | 北冥有鱼的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -329,7 +329,7 @@
                 
                 <a href="/categories/python/" title="python: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
+                             chip-active "
                             style="background-color: #F9EBEA;">python
                         <span class="tag-length">2</span>
                     </span>
@@ -343,65 +343,116 @@
 
 
     
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
-    </div>
-</div>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-2-Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python基础教程(2)--Python编程基础">
+                            
+                            <span class="card-title">Python基础教程(2)--Python编程基础</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                1Python的语法特点1.1注释规则
+单行注释:在python中,使用#作为单行注释,在#之后的部分直到这一行结束的部分都会被解释器忽略
 
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
+举个栗子:
+12#这是一个注释print(&quot;你好&quot;)  #这也是一个注释
+单行
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
-    
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                            <span class="chip bg-color">Python基础教程</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Python基础教程(1)--开发环境的搭建">
+                            
+                            <span class="card-title">Python基础教程(1)--开发环境的搭建</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Hello，大家好。今天呢，在这，我们聊一聊Python开发环境的搭建
+1.准备/材料材料：电脑一台、网线一根。。Windows版本下载链接
 
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
-            }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"python","max":4}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            color: ['#3ecf8e'],
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [2],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
 
-    radarChart.setOption(option);
-</script>
+注意：Python3.9及以上版本不再支持Windows7，所以，用Windows7的小伙伴们
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
-    
-
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                            <span class="chip bg-color">python基础教程</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
