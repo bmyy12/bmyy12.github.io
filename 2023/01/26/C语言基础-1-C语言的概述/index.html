@@ -4,13 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python基础教程(2)--Python编程基础, 北冥有鱼的博客">
-    <meta name="description" content="1Python的语法特点1.1注释规则
-单行注释:在python中,使用#作为单行注释,在#之后的部分直到这一行结束的部分都会被解释器忽略
-
-举个栗子:
-12#这是一个注释print(&amp;quot;你好&amp;quot;)  #这也是一个注释
-单行">
+    <meta name="keywords" content="C语言基础(1)--C语言的概述, 北冥有鱼的博客">
+    <meta name="description" content="C语言的历史
+C语言诞生于美国的贝尔实验室，由丹尼斯·里奇（Dennis MacAlistair Ritchie）以肯尼斯·蓝·汤普森（Kenneth Lane Thompson）设计的B语言为基础发展而来，在它的主体设计完成后，汤普森和里">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python基础教程(2)--Python编程基础 | 北冥有鱼的博客</title>
+    <title>C语言基础(1)--C语言的概述 | 北冥有鱼的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -274,12 +270,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python基础教程(2)--Python编程基础</h1>
+                    <h1 class="description center-align post-title">C语言基础(1)--C语言的概述</h1>
                 </div>
             </div>
         </div>
@@ -303,8 +299,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
-                                <span class="chip bg-color">Python基础教程</span>
+                            <a href="/tags/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                                <span class="chip bg-color">C语言基础教程</span>
                             </a>
                         
                     </div>
@@ -315,8 +311,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/C%E8%AF%AD%E8%A8%80/" class="post-category">
+                                C语言
                             </a>
                         
                     </div>
@@ -349,208 +345,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1Python的语法特点"><a href="#1Python的语法特点" class="headerlink" title="1Python的语法特点"></a>1Python的语法特点</h2><h3 id="1-1注释规则"><a href="#1-1注释规则" class="headerlink" title="1.1注释规则"></a>1.1注释规则</h3><ul>
-<li>单行注释:<br>在python中,使用#作为单行注释,在#之后的部分直到这一行结束的部分都会被解释器忽略</li>
-</ul>
-<p>举个栗子:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#这是一个注释</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)  <span class="comment">#这也是一个注释</span></span><br></pre></td></tr></table></figure>
-<p><strong>单行注释可以出现在代码的任何位置,但不能分割关键字和标识符等</strong><br>例如,下面的代码是错误的</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="comment">#输出你好&quot;你好&quot;)</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>多行注释:<br>Python中并没有提供单独的多行注释标记,而是包含在一对三引号中</li>
-</ul>
-<p>例如</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">注释内容</span></span><br><span class="line"><span class="string">这个程序是北冥有鱼写的</span></span><br><span class="line"><span class="string">可以输出 你好</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p>也可以这样:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">注释内容</span></span><br><span class="line"><span class="string">这个程序是北冥有鱼写的</span></span><br><span class="line"><span class="string">可以输出 你好</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p><em>注意:如果三引号(‘’’…’’’)和(“””…”””)出现在语句中,那么就不是注释,而是字符串</em><br>例如:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&quot;&quot;你好,世界&quot;&quot;&quot;</span>)  <span class="comment">#这里的三引号为字符串</span></span><br><span class="line">a=<span class="string">&#x27;&#x27;&#x27;无奈&#x27;&#x27;&#x27;</span>   <span class="comment">#这里的三引号也是字符串</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;你好&#x27;</span>) <span class="string">&#x27;&#x27;&#x27;输出你好&#x27;&#x27;&#x27;</span> <span class="comment">#这里的三引号是注释</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>编码声明注释<br>语法格式:<code>#coding=指定的编码</code></li>
-</ul>
-<p>例如:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding=gbk</span></span><br></pre></td></tr></table></figure>
-<p>为了美观,也可以这样写:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*-coding:gbk-*-</span></span><br></pre></td></tr></table></figure>
-<h3 id="1-2代码缩进"><a href="#1-2代码缩进" class="headerlink" title="1.2代码缩进"></a>1.2代码缩进</h3><p>学过C或Java的朋友应该都知道,C和Java都采用大括号”{}”分隔代码块,但python却是用代码缩进和冒号”:”分隔代码的各个层次</p>
-<p>举个栗子,以下代码的缩进均为正确的缩进:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">choice=<span class="built_in">input</span>(<span class="string">&quot;输入你的选择:[1放弃/2重试/3跳过]&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> choice==<span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你选择了放弃&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> choice==<span class="number">2</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你选择了重试&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> choice==<span class="number">3</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你选择了跳过&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你的选择无效&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p><strong>python对代码缩进要求很严格,同一级别的代码块缩进量必须相同,否则将会报错</strong></p>
-<p>举一个错误的栗子:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>)  <span class="comment">#这里缩进量为4个空格</span></span><br><span class="line">   choice=<span class="built_in">input</span>(<span class="string">&quot;输入1再输出一遍你好,其他输入将退出程序&quot;</span>)  <span class="comment">#这里就不对,缩进量为3个空格</span></span><br><span class="line">  <span class="keyword">if</span> choice==<span class="number">1</span>:   <span class="comment">#这里也不对,缩进量为2个空格</span></span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-<h3 id="1-3-1编码规范"><a href="#1-3-1编码规范" class="headerlink" title="1.3.1编码规范"></a>1.3.1编码规范</h3><p>python采用PEP 8作为编码规范,其中 PEP 是 Python Enhancement Proposal（Python 增强建议书）的缩写，8 代表的是 Python 代码的样式指南。下面仅给大家列出 PEP 8 中初学者应严格遵守的一些编码规则：</p>
-<ul>
-<li><p>每个 import 语句只导入一个模块，尽量避免一次导入多个模块</p>
-</li>
-<li><p>不要在行尾添加分号，也不要用分号将两条命令放在同一行</p>
-</li>
-<li><p>建议每行不超过 80 个字符，如果超过，建议使用小括号将多行内容隐式的连接起来，而不推荐使用反斜杠 \ 进行连接。</p>
-</li>
-<li><p>使用必要的空行可以增加代码的可读性，通常在顶级定义（如函数或类的定义）之间空两行，而方法定义之间空一行，另外在用于分隔某些功能的位置也可以空一行。</p>
-</li>
-<li><p>通常情况下，在运算符两侧、函数参数之间以及逗号两侧，都建议使用空格进行分隔。</p>
-<h3 id="1-3-2命名规范"><a href="#1-3-2命名规范" class="headerlink" title="1.3.2命名规范"></a>1.3.2命名规范</h3><p>命名规范在编写代码时有很重要的作用,虽然不遵循规范写出的程序未必报错,但规范命名能够更好地读代码…</p>
-</li>
-<li><p>命名只能以字母或者_下划线开头</p>
-</li>
-<li><p>名字不能包含空格</p>
-</li>
-<li><p>名字不能与关键字重合</p>
-</li>
-<li><p>不宜将字符l(小写字母l)，’O’’o’(大小写字母o)、’I’(大写字母I)用作变量名称，防止和数字0、1混淆</p>
-</li>
-<li><p>类的命名建议用首字母大写单词串(驼峰式命名)</p>
-<h2 id="2-Python中的变量"><a href="#2-Python中的变量" class="headerlink" title="2.Python中的变量"></a>2.Python中的变量</h2><h3 id="2-1-1保留字"><a href="#2-1-1保留字" class="headerlink" title="2.1.1保留字"></a>2.1.1保留字</h3><p>保留字是Python中已被赋予特定意义的一些单词,开发程序时,不可以用来作为变量名，函数名使用,保留字大小写敏感</p>
-<table>
-<thead>
-<tr>
-<th>and</th>
-<th>as</th>
-<th>assert</th>
-<th>break</th>
-<th>class</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>continue</td>
-<td>def</td>
-<td>del</td>
-<td>elif</td>
-<td>else</td>
-</tr>
-<tr>
-<td>except</td>
-<td>finally</td>
-<td>for</td>
-<td>from</td>
-<td>global</td>
-</tr>
-<tr>
-<td>if</td>
-<td>import</td>
-<td>in</td>
-<td>is</td>
-<td>lambda</td>
-</tr>
-<tr>
-<td>nonlocal</td>
-<td>not</td>
-<td>or</td>
-<td>pass</td>
-<td>raise</td>
-</tr>
-<tr>
-<td>return</td>
-<td>try</td>
-<td>while</td>
-<td>with</td>
-<td>yield</td>
-</tr>
-<tr>
-<td>False</td>
-<td>None</td>
-<td>True</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<p>查看python中的保留字可以用以下代码:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> keyboard</span><br><span class="line"><span class="built_in">print</span>(keyboard.kwlist)</span><br></pre></td></tr></table></figure>
-<h3 id="2-1-2标识符"><a href="#2-1-2标识符" class="headerlink" title="2.1.2标识符"></a>2.1.2标识符</h3><p>在 Python 里，标识符由字母、数字、下划线组成。</p>
-<p>在 Python 中，所有标识符可以包括英文、数字以及下划线”_”，但不能以数字开头。</p>
-<p>Python 中的标识符是区分大小写的。</p>
-<p>以下划线开头的标识符是有特殊意义的。</p>
-<p>以双下划线开头的__foo代表类的私有成员，__foo(self)代表类的私有方法，不能直接从外部调用，需通过类里的其他方法调用。</p>
-<p>以双下划线开头和结尾的__foo__代表 Python 里特殊方法专用的标识，如 __init__()代表类的构造函数。</p>
-<h3 id="2-2-1变量的理解"><a href="#2-2-1变量的理解" class="headerlink" title="2.2.1变量的理解"></a>2.2.1变量的理解</h3><p>任何编程语言都需要处理数据，比如数字、字符串、字符等，我们可以直接使用数据，也可以将数据保存到变量中，方便以后使用。</p>
-<p>变量（Variable）可以看成一个小箱子，专门用来“盛装”程序中的数据。每个变量都拥有独一无二的名字，通过变量的名字就能找到变量中的数据。</p>
-<p>从底层看，程序中的数据最终都要放到内存（内存条）中，变量其实就是这块内存的名字。</p>
-<p>和变量相对应的是常量（Constant），它们都是用来“盛装”数据的小箱子，不同的是：变量保存的数据可以被多次修改，而常量一旦保存某个数据之后就不能修改了。</p>
-<h3 id="2-2-2变量的定义"><a href="#2-2-2变量的定义" class="headerlink" title="2.2.2变量的定义"></a>2.2.2变量的定义</h3><p>python中不需要像其他编程语言一样先声明变量名以及其类型,直接赋值即可创建各种类型的变量</p>
-<p>为变量赋值可以通过”=”实现,语法格式如下:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量名 = 值</span><br></pre></td></tr></table></figure>
-<p>例如,创建一个整形变量a,赋值为100,则可以用以下代码:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=100</span><br></pre></td></tr></table></figure>
-<p>也可以通过为变量赋一个字符串值,创建一个字符串变量</p>
-<p>例如:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">name=&quot;张三&quot;</span><br></pre></td></tr></table></figure>
+                <h2 id="C语言的历史"><a href="#C语言的历史" class="headerlink" title="C语言的历史"></a>C语言的历史</h2><blockquote>
+<p>C语言诞生于美国的贝尔实验室，由丹尼斯·里奇（Dennis MacAlistair Ritchie）以肯尼斯·蓝·汤普森（Kenneth Lane Thompson）设计的B语言为基础发展而来，在它的主体设计完成后，汤普森和里奇用它完全重写了UNIX，且随着UNIX的发展，c语言也得到了不断的完善。为了利于C语言的全面推广，许多专家学者和硬件厂商联合组成了C语言标准委员会，并在之后的1989年，诞生了第一个完备的C标准，简称“C89”，也就是“ANSI C”，截至2020年，最新的C语言标准为2018年6月发布的“C18”。<br>C语言之所以命名为C，是因为C语言源自Ken Thompson发明的B语言，而B语言则源自BCPL语言。<br>1967年，剑桥大学的Martin Richards对CPL语言进行了简化，于是产生了BCPL（Basic Combined Programming Language）语言。<br>20世纪60年代，美国AT&amp;T公司贝尔实验室（AT&amp;T Bell Laboratories）的研究员肯·汤普森（Kenneth Lane Thompson）闲来无事，手痒难耐，想玩一个他自己编的，模拟在太阳系航行的电子游戏——Space Travel。他背着老板，找到了台空闲的小型计算机——PDP-7。但这台电脑没有操作系统，而游戏必须使用操作系统的一些功能，于是他着手为PDP-7开发操作系统。后来，这个操作系统被命名为——UNICS（Uniplexed Information and Computing Service）。<br>1969年，美国贝尔实验室的Ken Thompson，以BCPL语言为基础，设计出很简单且很接近硬件的B语言（取BCPL的首字母），并且用B语言写了初版UNIX操作系统（叫UNICS）。<br>1971年，同样酷爱Space Travel的丹尼斯·里奇为了能早点儿玩上游戏，加入了汤普森的开发项目，合作开发UNIX。他的主要工作是改造B语言，使其更成熟。<br>1972年，美国贝尔实验室的丹尼斯·里奇在B语言的基础上最终设计出了一种新的语言，他取了BCPL的第二个字母作为这种语言的名字，这就是C语言。<br>1973年初，C语言的主体完成。汤普森和里奇迫不及待地开始用它完全重写了UNIX。此时，编程的乐趣使他们已经完全忘记了那个“Space Travel”，一门心思地投入到了UNIX和C语言的开发中。随着UNIX的发展，C语言自身也在不断地完善。直到2020年，各种版本的UNIX内核和周边工具仍然使用C语言作为最主要的开发语言，其中还有不少继承汤普逊和里奇之手的代码.<br>在开发中，他们还考虑把UNIX移植到其他类型的计算机上使用。C语言强大的移植性（Portability）在此显现。机器语言和汇编语言都不具有移植性，为x86开发的程序，不可能在Alpha、SPARC和ARM等机器上运行。而C语言程序则可以使用在任意架构的处理器上，只要那种架构的处理器具有对应的C语言编译器和库，然后将C源代码编译、连接成目标二进制文件之后即可在哪种架构的处理器运行。<br>1977年，丹尼斯·里奇发表了不依赖于具体机器系统的C语言编译文本《可移植的C语言编译程序》。<br>C语言继续发展，在1982年，很多有识之士和美国国家标准协会（ANSI）为了使C语言健康地发展下去，决定成立C标准委员会，建立C语言的标准。委员会由硬件厂商、编译器及其他软件工具生产商、软件设计师、顾问、学术界人士、C语言作者和应用程序员组成。1989年，ANSI发布了第一个完整的C语言标准——ANSI X3.159-1989，简称“C89”，不过人们也习惯称其为“ANSI C”。C89在1990年被国际标准化组织（International Standard Organization，ISO）一字不改地采纳，ISO官方给予的名称为：ISO/IEC 9899，所以ISO/IEC9899:1990也通常被简称为“C90”。1999年，在做了一些必要的修正和完善后，ISO发布了新的C语言标准，命名为ISO/IEC 9899:1999，简称“C99”。在2011年12月8日，ISO又正式发布了新的标准，称为ISO/IEC9899:2011，简称为“C11”。<br><em>注:资料来自百度</em></p>
+</blockquote>
+<hr>
+<h2 id="C语言的特点"><a href="#C语言的特点" class="headerlink" title="C语言的特点"></a>C语言的特点</h2><blockquote>
+<p>（1）简洁的语言<br>C语言包含的各种控制语句仅有9种，关键字也只有32个，程序的编写要求不严格且以小写字母为主，对许多不必要的部分进行了精简。实际上，语句构成与硬件有关联的较少，且C语言本身不提供与硬件相关的输入输出、文件管理等功能，如需此类功能，需要通过配合编译系统所支持的各类库进行编程，故c语言拥有非常简洁的编译系统。<br>（2）具有结构化的控制语句<br>C语言是一种结构化的语言，提供的控制语句具有结构化特征，如for语句、if…else语句和switch语句等。可以用于实现函数的逻辑控制，方便面向过程的程序设计。<br>（3）丰富的数据类型<br>C语言包含的数据类型广泛，不仅包含有传统的字符型、整型、浮点型、数组类型等数据类型，还具有其他编程语言所不具备的数据类型，其中以指针类型数据使用最为灵活，可以通过编程对各种数据结构进行计算。<br>（4）丰富的运算符<br>C语言包含34个运算符，它将赋值、括号等均视作运算符来操作，使C程序的表达式类型和运算符类型均非常丰富。<br>（5）可对物理地址进行直接操作<br>C语言允许对硬件内存地址进行直接读写，以此可以实现汇编语言的主要功能，并可直接操作硬件。C语言不但具备高级语言所具有的良好特性，又包含了许多低级语言的优势，故在系统软件编程领域有着广泛的应用。<br>（6）代码具有较好的可移植性<br>C语言是面向过程的编程语言，用户只需要关注所被解决问题的本身，而不需要花费过多的精力去了解相关硬件，且针对不同的硬件环境，在用C语言实现相同功能时的代码基本一致，不需或仅需进行少量改动便可完成移植，这就意味着，对于一台计算机编写的C程序可以在另一台计算机上轻松地运行，从而极大的减少了程序移植的工作强度。<br>（7）可生成高质量、目标代码执行效率高的程序<br>与其他高级语言相比，C语言可以生成高质量和高效率的目标代码，故通常应用于对代码质量和执行效率要求较高的嵌入式系统程序的编写。<br><em>注:资料来自百度</em></p>
+</blockquote>
 
-<p>另外,Python是一种动态类型的语言,也就是说,变量类型可以随时转换<br>例如:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">100</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的值为&quot;</span>+<span class="built_in">str</span>(a))  <span class="comment">#输出a的值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))  <span class="comment">#输出a的类型</span></span><br><span class="line">a=<span class="string">&#x27;张三&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的值为&quot;</span>+<span class="built_in">str</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br></pre></td></tr></table></figure>
-<h2 id="3-Python中的基本数据类型"><a href="#3-Python中的基本数据类型" class="headerlink" title="3.Python中的基本数据类型"></a>3.Python中的基本数据类型</h2><h3 id="3-1整形"><a href="#3-1整形" class="headerlink" title="3.1整形"></a>3.1整形</h3><p>整形可以表示整数数值,即没有小数的数值</p>
-<p>Python中,整数包括正整数,负整数和0,它的位数是任意的(只要不超出内存)</p>
-<p>整数类型包括十进制整数,八进制整数,十六进制整数和二进制整数</p>
-<h4 id="3-1-1十进制整数"><a href="#3-1-1十进制整数" class="headerlink" title="3.1.1十进制整数"></a>3.1.1十进制整数</h4><p>这个大家都很容易理解,”满十进一”,我们平常做数学题计算都是十进制</p>
-<h4 id="3-1-2八进制整数"><a href="#3-1-2八进制整数" class="headerlink" title="3.1.2八进制整数"></a>3.1.2八进制整数</h4><p>由0-7八个数字组成,”满八进一”,并且以0o或0O开头</p>
-<p>如0o10转换为十进制就是8,0o144转换为十进制就是100<br>-0o12转换为十进制就是-10</p>
-<h4 id="3-1-3十六进制整数"><a href="#3-1-3十六进制整数" class="headerlink" title="3.1.3十六进制整数"></a>3.1.3十六进制整数</h4><p>由0-9,A-F组成,”满十六进一”,并且以0x或0X开头</p>
-<p>如0x64转换为十进制就是100,0x25转换成十进制数就是37</p>
-<h4 id="3-1-4二进制整数"><a href="#3-1-4二进制整数" class="headerlink" title="3.1.4二进制整数"></a>3.1.4二进制整数</h4><p>由0和1组成,”满二进一”</p>
-<p>如101转换为十进制就是5,1010转换为十进制就是10</p>
-<h3 id="3-2浮点型"><a href="#3-2浮点型" class="headerlink" title="3.2浮点型"></a>3.2浮点型</h3><p>浮点型由整数部分和小数部分组成,主要用于处理包括小数的数,如3.14,1.11</p>
-<h3 id="3-3字符串"><a href="#3-3字符串" class="headerlink" title="3.3字符串"></a>3.3字符串</h3><p>字符串就是连续的字符序列,通常使用单引号’’,双引号””或三引号’’’ ‘’’或””” “””组成,语义上没有差别</p>
-<h3 id="3-4布尔类型"><a href="#3-4布尔类型" class="headerlink" title="3.4布尔类型"></a>3.4布尔类型</h3><p>布尔类型主要表示真和假的值,在Python中,标识符True和False被解释为布尔值</p>
-<p>另外,Python中的布尔值可以转换为数值,其中True表示1,False表示0</p>
-<h3 id="3-5数据类型转换"><a href="#3-5数据类型转换" class="headerlink" title="3.5数据类型转换"></a>3.5数据类型转换</h3><table>
-<thead>
-<tr>
-<th>函数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int(x)</td>
-<td>将 x 转换成整数类型</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将 x 转换成浮点数类型</td>
-</tr>
-<tr>
-<td>complex(real，[,imag])</td>
-<td>创建一个复数</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将 x 转换为字符串</td>
-</tr>
-<tr>
-<td>repr(x)</td>
-<td>将 x 转换为表达式字符串</td>
-</tr>
-<tr>
-<td>eval(str)</td>
-<td>计算在字符串中的有效 Python 表达式，并返回一个对象</td>
-</tr>
-<tr>
-<td>chr(x)</td>
-<td>将整数 x 转换为一个字符</td>
-</tr>
-<tr>
-<td>ord(x)</td>
-<td>将一个字符 x 转换为它对应的整数值</td>
-</tr>
-<tr>
-<td>hex(x)</td>
-<td>将一个整数 x 转换为一个十六进制字符串</td>
-</tr>
-<tr>
-<td>oct(x)</td>
-<td>将一个整数 x 转换为一个八进制的字符串</td>
-</tr>
-</tbody></table>
-<h2 id="4-基本输入与输出"><a href="#4-基本输入与输出" class="headerlink" title="4.基本输入与输出"></a>4.基本输入与输出</h2><h3 id="4-1使用input-函数输入"><a href="#4-1使用input-函数输入" class="headerlink" title="4.1使用input()函数输入"></a>4.1使用input()函数输入</h3><p>python中的内置函数input()可以接收用户输入的内容,input()的基本用法如下:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量名=<span class="built_in">input</span>(<span class="string">&quot;提示文字&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p>举个栗子:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="built_in">input</span>(<span class="string">&quot;你输入啥,我就在屏幕上打印啥:&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
-<p>在python3中,无论input接收到的是什么数据都会被当作字符串读取,如果想接收其他类型就必须进行类型转换,例如接收整形数据并保存在变量x中,可以这样写:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入数值:&quot;</span>))</span><br></pre></td></tr></table></figure>
-<h3 id="4-2使用print-函数输出"><a href="#4-2使用print-函数输出" class="headerlink" title="4.2使用print()函数输出"></a>4.2使用print()函数输出</h3><p>Python中的内置函数print()可以将结果输出到控制台中,print()的进本用法如下:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(输出内容)</span><br></pre></td></tr></table></figure>
-<p>举个栗子:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">3</span></span><br><span class="line">b=<span class="number">5</span></span><br><span class="line"><span class="built_in">print</span>(a)  <span class="comment">#打印a的值</span></span><br><span class="line"><span class="built_in">print</span>(b)  <span class="comment">#打印b的值</span></span><br><span class="line"><span class="built_in">print</span>(a,b)   <span class="comment">#打印a和b的值</span></span><br><span class="line"><span class="built_in">print</span>(a+b)   <span class="comment">#打印a+b的值</span></span><br><span class="line"><span class="built_in">print</span>(a*b)   <span class="comment">#打印a✖b的值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;愿明日之你,胸中有沟壑,立马镇山河!&quot;</span>)</span><br></pre></td></tr></table></figure>
                 
             </div>
             <hr/>
@@ -576,7 +378,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://bmyy12.github.io/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-2-Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">https://bmyy12.github.io/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-2-Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/</a>
+                    <a href="https://bmyy12.github.io/2023/01/26/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80-1-C%E8%AF%AD%E8%A8%80%E7%9A%84%E6%A6%82%E8%BF%B0/">https://bmyy12.github.io/2023/01/26/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80-1-C%E8%AF%AD%E8%A8%80%E7%9A%84%E6%A6%82%E8%BF%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -614,8 +416,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
-                                    <span class="chip bg-color">Python基础教程</span>
+                                <a href="/tags/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                                    <span class="chip bg-color">C语言基础教程</span>
                                 </a>
                             
                         </div>
@@ -661,9 +463,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/01/26/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80-1-C%E8%AF%AD%E8%A8%80%E7%9A%84%E6%A6%82%E8%BF%B0/">
                     <div class="card-image">
@@ -681,9 +484,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -696,6 +499,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -714,13 +518,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/">
+                <a href="/2023/01/26/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-2-Python%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Python基础教程(1)--开发环境的搭建">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python基础教程(2)--Python编程基础">
                         
-                        <span class="card-title">Python基础教程(1)--开发环境的搭建</span>
+                        <span class="card-title">Python基础教程(2)--Python编程基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -748,8 +552,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
-                        <span class="chip bg-color">python基础教程</span>
+                    <a href="/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">Python基础教程</span>
                     </a>
                     
                 </div>
