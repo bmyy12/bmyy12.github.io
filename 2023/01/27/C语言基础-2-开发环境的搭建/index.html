@@ -397,7 +397,20 @@ Dev-C++ ">
 <p><em>提醒一下:储存空间小的或者电脑配置不好的朋友最好别折腾这个</em></p>
 <h2 id="其他开发工具"><a href="#其他开发工具" class="headerlink" title="其他开发工具"></a>其他开发工具</h2><ul>
 <li><h3 id="Turbo-C"><a href="#Turbo-C" class="headerlink" title="Turbo C"></a>Turbo C</h3>Turbo C是一款上古时期的C语言开发环境,只能用键盘操作,非常不方便,但它集成了一套图形库,能在控制台里画图,看起来非常炫酷,所以至今仍有人用.</li>
+<li><h3 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h3>GCC（GNU Compiler Collection，GNU编译器套件）是由GNU开发的编程语言编译器。GNU编译器套件包括C、C++、 Objective-C、 Fortran、Java、Ada和Go语言前端，也包括了这些语言的库（如libstdc++，libgcj等。）</li>
 </ul>
+<p><strong>注意,GCC仅仅只是一个代码编译器,它没有GUI界面,只能使用命令来编译</strong></p>
+<p>Ubuntu/Kali等用户可以在终端中键入以下命令安装:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt install gcc</span><br></pre></td></tr></table></figure>
+
+<p>Windows用户安装相对麻烦:</p>
+<p>首先先安装mingw,记好自己的安装路径(例如我的是C:\MinGW)</p>
+<p>然后将C:/MinGW/bin添加到环境变量 (这个路径要根据你安装路径的不同自己调整)</p>
+<p>然后打开cmd或powershell,输入以下命令安装gcc</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mingw-get install gcc</span><br></pre></td></tr></table></figure>
+
+<p>要安装C++编译器的话,键入以下命令:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mingw-get install g++</span><br></pre></td></tr></table></figure>
 
                 
             </div>
